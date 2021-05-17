@@ -74,70 +74,70 @@ const routes = [
     //     path: "/tool/websocket",
     //     component: r => require(['./views/tool/websocket.vue'], r)
     // },
-    {
-        path: "/tool/errlog",
-        component: r => require(['./views/tool/errlog.vue'], r)
-    },
-    {
-        path: "/tool/reallog",
-        component: r => require(['./views/tool/reallog.vue'], r)
-    },
-    {
-        path: "/tool/mqTools",
-        component: r => require(['./views/tool/mqTools.vue'], r)
-    },
+    // {
+    //     path: "/tool/errlog",
+    //     component: r => require(['./views/tool/errlog.vue'], r)
+    // },
+    // {
+    //     path: "/tool/reallog",
+    //     component: r => require(['./views/tool/reallog.vue'], r)
+    // },
+    // {
+    //     path: "/tool/mqTools",
+    //     component: r => require(['./views/tool/mqTools.vue'], r)
+    // },
     {
         path: "/tool/mysqldump",
         component: r => require(['./views/tool/mysqldump.vue'], r)
     },
-    {
-        path: "/tool/queryConfig",
-        component: r => require(['./views/tool/queryConfig.vue'], r)
-    },
-    {
-        path: "/tool/queryConfig_v2",
-        component: r => require(['./views/tool/queryConfig_v2.vue'], r)
-    },
-    {
-        path: "/tool/queryOrder",
-        component: r => require(['./views/tool/queryOrder.vue'], r)
-    },
-    {
-        path: "/tool/userInfo",
-        component: r => require(['./views/tool/userInfo.vue'], r)
-    },
-    {
-        path: "/tool/createSign",
-        component: r => require(['./views/tool/createSign.vue'], r)
-    },
-    {
-        path: "/tool/queryDrmConfig",
-        component: r => require(['./views/tool/queryDrmConfig.vue'], r)
-    },
-    {
-        path: "/tool/queryRealWaterConfig",
-        component: r => require(['./views/tool/queryRealWaterConfig.vue'], r)
-    },
-    {
-        path: "/tool/escape",
-        component: r => require(['./views/tool/escape.vue'], r)
-    },
-    {
-        path: "/tool/tcelog",
-        component: r => require(['./views/tool/tcelog.vue'], r)
-    },
-    {
-        path: "/tool/OCR",
-        component: r => require(['./views/tool/ocr.vue'], r)
-    },
+    // {
+    //     path: "/tool/queryConfig",
+    //     component: r => require(['./views/tool/queryConfig.vue'], r)
+    // },
+    // {
+    //     path: "/tool/queryConfig_v2",
+    //     component: r => require(['./views/tool/queryConfig_v2.vue'], r)
+    // },
+    // {
+    //     path: "/tool/queryOrder",
+    //     component: r => require(['./views/tool/queryOrder.vue'], r)
+    // },
+    // {
+    //     path: "/tool/userInfo",
+    //     component: r => require(['./views/tool/userInfo.vue'], r)
+    // },
+    // {
+    //     path: "/tool/createSign",
+    //     component: r => require(['./views/tool/createSign.vue'], r)
+    // },
+    // {
+    //     path: "/tool/queryDrmConfig",
+    //     component: r => require(['./views/tool/queryDrmConfig.vue'], r)
+    // },
+    // {
+    //     path: "/tool/queryRealWaterConfig",
+    //     component: r => require(['./views/tool/queryRealWaterConfig.vue'], r)
+    // },
+    // {
+    //     path: "/tool/escape",
+    //     component: r => require(['./views/tool/escape.vue'], r)
+    // },
+    // {
+    //     path: "/tool/tcelog",
+    //     component: r => require(['./views/tool/tcelog.vue'], r)
+    // },
+    // {
+    //     path: "/tool/OCR",
+    //     component: r => require(['./views/tool/ocr.vue'], r)
+    // },
     {
         path: "/tool/dbinsert",
         component: r => require(['./views/tool/dbinsert.vue'], r)
     },
-    {
-        path: "/tool/upstream",
-        component: r => require(['./views/tool/upstream.vue'], r)
-    },
+    // {
+    //     path: "/tool/upstream",
+    //     component: r => require(['./views/tool/upstream.vue'], r)
+    // },
     {
         path: "/tool/time",
         component: r => require(['./views/tool/time.vue'], r)
