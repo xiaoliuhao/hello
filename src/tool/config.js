@@ -67,15 +67,6 @@ const tool = [
 
 const open_tools_env = [
     {"name": "应用云沙箱&DEV", "url":"https://sandbox.api.openmidas.com/hawkenliu_tools/php/index.php"},
-    {"name": "游云南", "url":"https://midas.ybsjyyn.com/checkerr/tools/php/index.php"},
-    {"name": "微校saas", "url":"https://midas.weixiao.qq.com/checkerr/tools/index.php"},
-    {"name": "华润怡宝", "url":"https://mem-sit-notify.crbeverage.com/checkerr/tools/index.php"},
-    {"name": "微校仲恺", "url":"https://zhkupay.weixiao.qq.com/checkerr/tools/index.php"},
-    {"name": "腾讯行政", "url":"https://txmidas.weixiao.qq.com/checkerr/tools/index.php"},
-    {"name": "微校广外", "url":"https://gwwxzf.gdufs.edu.cn/checkerr/tools/index.php"},
-    {"name": "游武隆", "url":"https://midas.trip.wlkst.com/checkerr/tools/index.php"},
-    {"name": "智慧校园", "url":"https://midas.campus.qq.com/checkerr/tools/index.php"},
-    {"name": "聚鑫-现网", "url":"https://midas.cpdp.qq.com/checkerr/tools/index.php"},
 ];
 
 
