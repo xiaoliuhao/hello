@@ -13,15 +13,14 @@ export const BADGE_CATEGORY = ["open"];
 export const BADGE_TOOL = ["reallog"];
 // 默认常用工具
 export const DEFAULT_COMMON_TOOL = [
-    "mysqldump","errlog","reallog", "queryOrder","createSign","mqTools","queryRealWaterConfig","dbinsert"
+    "mysqldump","dbinsert"
 ];
 
 const category = [
     {"name": "common", "title": "常用工具"},
-    {"name": "open","title": "开放工具"},
+    // {"name": "open","title": "开放工具"},
     {"name": "encryption", "title": "加密解密"},
     {"name": "conversion", "title": "编码转换"},
-    {"name": "tce", "title": "TCE"},
     {"name": "other", "title": "其他工具"},
 ];
 
@@ -32,7 +31,7 @@ const tool = [
     {"name": "encrypt", "title": "加密/解密", cat: ["encryption"]},
     {"name": "base64", "title": "BASE64编码", cat: ["encryption"]},
     {"name": "url", "title": "URL编码", cat: ["conversion"]},
-    {"name": "timestamp", "title": "时间戳", cat: ["open"]},
+    {"name": "timestamp", "title": "时间戳", cat: ["other"]},
     // {"name": "qrCode", "title": "二维码", cat: ["other"]},
     {"name": "pinyin", "title": "汉字转拼音", cat: ["conversion"]},
     {"name": "escape", "title": "escape", cat: ["conversion"]},
