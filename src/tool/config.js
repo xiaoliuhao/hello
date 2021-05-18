@@ -18,7 +18,7 @@ export const DEFAULT_COMMON_TOOL = [
 
 const category = [
     {"name": "common", "title": "常用工具"},
-    // {"name": "open","title": "开放工具"},
+    {"name": "mysql","title": "MySQL"},
     {"name": "encryption", "title": "加密解密"},
     {"name": "conversion", "title": "编码转换"},
     {"name": "other", "title": "其他工具"},
@@ -34,7 +34,7 @@ const tool = [
     {"name": "timestamp", "title": "时间戳", cat: ["other"]},
     // {"name": "qrCode", "title": "二维码", cat: ["other"]},
     {"name": "pinyin", "title": "汉字转拼音", cat: ["conversion"]},
-    {"name": "escape", "title": "escape", cat: ["conversion"]},
+    // {"name": "escape", "title": "escape", cat: ["conversion"]},
     // {"name": "ip", "title": "IP地址查询", cat: ["other"]},
     // {"name": "code", "title": "代码格式化", cat: ["other"]},
     {"name": "unicode", "title": "Unicode", cat: ["conversion"]},
@@ -55,17 +55,16 @@ const tool = [
     // {"name": "queryDrmConfig", "title":"抵扣券查询", cat: ["open"]},
     // {"name": "queryRealWaterConfig", "title":"推送配置", cat: ["open"]},
     // {"name": "createSign", "title":"签名计算", cat: ["open"]},
-    {"name": "mysqldump", "title": "mysqldump", cat: ["other"] },
+    {"name": "mysqldump", "title": "mysqldump", cat: ["mysql"] },
     // {"name": "OCR", "title": "截图识字", cat: ["other"] },
     // {"name": "tcelog", "title": "TCE日志查询", cat: ["tce"] },
-    {"name": "dbinsert", "title": "dbinsert", cat: ["other"] },
-    {"name": "upstream", "title": "upstream", cat: ["other"] },
+    {"name": "dbinsert", "title": "dbinsert", cat: ["mysql"] },
+    // {"name": "upstream", "title": "upstream", cat: ["other"] },
     { 'name': 'time', 'title': '时间计算器', cat: ['other'] },
 
 ];
 
 const open_tools_env = [
-    {"name": "应用云沙箱&DEV", "url":"https://sandbox.api.openmidas.com/hawkenliu_tools/php/index.php"},
 ];
 
 
@@ -81,23 +80,6 @@ const getUserCommon = function () {
 
 const setUserCommon = function (tools) {
     cache.setnNoVersion('user_common', tools);
-};
-
-const simple_encode_key='hawkenliu_simple_key';
-
-const  simple_encode = function (strcontent){
-    console.log(strcontent.length);
-    let content_arr =  Base64.encode(strcontent).split('');
-    let simple_encode_key_arr = simple_encode_key.split('');
-    for (let i=0; i < simple_encode_key.length; i++ ){
-        if(i < content_arr.length){
-            content_arr[i] += simple_encode_key_arr[i];
-        }
-    }
-    // encode_con
-    let encoded_str=content_arr.join('').replace('=','O0O0O').replace('+','o000o').replace('/','oo00o');
-    // console.log(encoded_str);
-    return encoded_str;
 };
 
 export default {
