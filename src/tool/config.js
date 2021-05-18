@@ -65,6 +65,7 @@ const tool = [
 ];
 
 const open_tools_env = [
+    {"name": "111", "url":"https://127.0.0.1"},
 ];
 
 
@@ -80,6 +81,23 @@ const getUserCommon = function () {
 
 const setUserCommon = function (tools) {
     cache.setnNoVersion('user_common', tools);
+};
+
+const simple_encode_key='hawkenliu_simple_key';
+
+const  simple_encode = function (strcontent){
+    console.log(strcontent.length);
+    let content_arr =  Base64.encode(strcontent).split('');
+    let simple_encode_key_arr = simple_encode_key.split('');
+    for (let i=0; i < simple_encode_key.length; i++ ){
+        if(i < content_arr.length){
+            content_arr[i] += simple_encode_key_arr[i];
+        }
+    }
+    // encode_con
+    let encoded_str=content_arr.join('').replace('=','O0O0O').replace('+','o000o').replace('/','oo00o');
+    // console.log(encoded_str);
+    return encoded_str;
 };
 
 export default {
